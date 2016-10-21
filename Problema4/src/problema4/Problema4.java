@@ -16,8 +16,8 @@ public class Problema4 {
     public static void main(String[] args) {
         float r;
         r=operacion(); //introducimos la operacion para despues mostrar el resultado
+        mensajeSalida();
         
-        System.out.println("Gracias por usar el programa");// Agradecemos por usar el programa
     }
     
     public static int solicitarDatos(){ //solicitamos que introduscan el dato al teclado
@@ -33,9 +33,14 @@ public class Problema4 {
     r= (float) ((g*f) + 32);
     System.out.println(g + "°G" + " es igual a: " + r + "°F");//se muestra el resultado
          return g;
+         
+         
     
     }
     
-          
+         public static void mensajeSalida(){
+        System.out.println("Gracias por usar el programa"); //se agradece
+        System.exit(0);//Sale del programa
+    }       
 
 }
