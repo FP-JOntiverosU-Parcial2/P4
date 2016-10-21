@@ -17,14 +17,14 @@ public class Problema03 {
      */
     public static void main(String[] args) {
             int r;
-            r=mostrarResultado();
-           
+            r=mostrarResultado();   //resultados y operaciones
+           mensajeSalida(); //Salida
    
     
         
        
     }
-    public static int solicitarDato(){
+    public static int solicitarDato(){   //Pide dato
         int dato;
         System.out.println("Introduce el numero:");
         Scanner teclado= new Scanner(System.in);
@@ -37,14 +37,17 @@ public class Problema03 {
        int dato=solicitarDato(), factorial =1;
        
        
-       for (int i=1; i<=dato; i++){
+       for (int i=1; i<=dato; i++){   //  
            factorial= factorial*i;
            }
        System.out.println("El resultado de: " + dato + " es: " + factorial);
        return dato;
        }
        
-              
+        public static void mensajeSalida(){
+        System.out.println("Gracias por usar el programa"); //se agradece
+        System.exit(0);//Sale del programa
+    }       
      
 }
 
